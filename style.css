@@ -19,27 +19,20 @@ body {
 }
 
 #container {
-    /* position: relative; */
+
     width: 100%;
     height: auto;
     box-sizing: border-box;
-    /* padding: 10px; */
-
-    /* display: grid;
-    place-items: center; */
+  
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* display: block; */
-    /* padding-bottom: 60px; */
-    /* background-image: url(nature1.jpg) ;
-    background-size: cover;
-    background-position: center; */
+    
     gap: 20px;
 
     overflow-x: hidden;
-    /* object-fit: cover; */
+
 
 }
 
@@ -56,14 +49,7 @@ body {
     gap: 20px;
 }
 
-/* #location select{
-border: 1px solid white;
-font-size: 20px;
-font-family: 'Roboto';
-outline: none;
-height: 50px;
-   
-} */
+
 
 #location input {
     border: 1px solid white;
@@ -94,6 +80,7 @@ height: 50px;
     font-size: 22px;
 }
 
+
 #country,
 #city,
 #state,
@@ -109,7 +96,7 @@ height: 50px;
 #check:active{
         transform: scale(0.90);
 }
-
+/* ------------------------------------------------------------------------------------------------------------ */
 #container .section1 {
 
     width: 100vw;
@@ -120,11 +107,6 @@ height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-
-
-
-
-
 }
 
 #container .section1 .wrapper1 {
@@ -158,6 +140,7 @@ height: 50px;
 .section1 .wrapper1 .cityData .cityInfo {
     display: block;
     padding-top: 15px;
+    overflow: hidden;
     /* align-items: center;
     justify-content: center; */
 }
@@ -169,6 +152,7 @@ height: 50px;
     width: 100%;
     font-size: 4em;
     letter-spacing: 4px;
+    white-space: nowrap;
 }
 
 .section1 .wrapper1 .cityData .cityInfo h2 {
@@ -189,8 +173,7 @@ height: 50px;
     display: flex;
     align-items: center;
     flex-direction: row;
-    /* gap: 8px; */
-    /* margin-bottom: 20px; */
+
 
 }
 
@@ -260,11 +243,6 @@ height: 50px;
 
 }
 
-
-
-
-
-
 .weather {
     width: 40%;
     height: 90%;
@@ -277,42 +255,6 @@ height: 50px;
     border-left: 2px solid white;
 
 }
-
-/* .cel{
-    display: grid;
-    place-content: center;
-    height: 40px;
-    position: relative;
-    width: 100%;
-    text-align: center;
-    cursor: pointer;
-    padding:  5px 0px;
-    margin: 0px 10px ;
-    background-color: black;
-    color: beige;
-    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.6);
-    font-size: 1.5rem;
-    font-weight: 500;
-    transition: 0.5s;
-} */
-/* .farh{
-    display: grid;
-    place-content: center;
-    height: 40px;
-    position: relative;
-    width: 100%;
-    text-align: center;
-    cursor: pointer;
-    
-    padding:  5px 0px;
-    margin: 0px 10px ;
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.6);
-    font-size: 1.5rem;
-    font-weight: 500;
-    transition: 0.5s;
-} */
-
 .temperature {
     width: 100%;
     position: relative;
@@ -320,14 +262,10 @@ height: 50px;
     bottom: 0;
     margin: 10px 0px;
     padding: 10px 0px;
-    /* flex: 1 1 ; */
-    /* flex-direction: column; */
-
 }
 
 #temp {
-    /* padding: 5px;
-    height: auto; */
+
     font-size: 10rem;
     font-family: 'Work Sans';
     font-weight: 100;
@@ -335,8 +273,6 @@ height: 50px;
     text-align: center;
 
 }
-
-
 h2::after {
     content: attr(data-end);
     color: rgb(255, 255, 255);
@@ -354,19 +290,6 @@ h2::after {
     font-size: 2rem;
     text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
 }
-
-/* .weather .temp_diff select{
-    position: relative;
-    font-size: 20px;
-    width: 30px;
-    background-color:azure;
-    border-radius: 20px;
-
-    height: 20px;
-    line-height: 20px;
-
-} */
-
 .toggleBtn {
     white-space: nowrap;
     /* top: 50%; */
@@ -379,10 +302,9 @@ h2::after {
     align-items: center;
     justify-content: space-evenly;
     padding: 10px;
-    /* position: fixed; */
-    /* margin-top: 20px; */
+ 
     transform: translateY(35px);
-    /* border-top: 20px; */
+
     box-shadow:
         2.8px 2.8px 2.2px rgba(0, 0, 0, 0.039),
         6.7px 6.7px 5.3px rgba(0, 0, 0, 0.057),
@@ -392,7 +314,7 @@ h2::after {
         100px 100px 80px rgba(0, 0, 0, 0.14)
 }
 
-/*back*/
+/* ------------------------------------------------------------------------------------------------------------ */
 #back {
     background-color: #b1dae7;
     color: #4d4a4a;
@@ -419,12 +341,6 @@ h2::after {
     transform: scale(0.90);
 }
 
-/* #back:hover{
-    content:'\f060' ;
-    
-} */
-
-/* From uiverse.io by @alexmaracinaru */
 .cta {
     position: relative;
     margin: auto;
@@ -485,35 +401,17 @@ h2::after {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
+/* ------------------------------------------------------------------------------------------------------------ */
 .section2 {
     position: relative;
     height: 60vh;
     width: 100vw;
-    /* position: relative; */
-    /* display: none; */
-
-
     display: flex;
     align-items: center;
     justify-content: center;
-    /* transform: translateY(50px); */
-
 }
 
 .section2 .wrapper2 {
-    /* background-color: aliceblue; */
-
     width: 95%;
     height: 100%;
     display: flex;
@@ -523,12 +421,9 @@ h2::after {
 
 .section2 .extraInfo {
     position: relative;
-
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     flex-wrap: wrap;
 }
 
@@ -560,8 +455,7 @@ h2::after {
 
 }
 
-
-
+/* ------------------------------------------------------------------------------------------------------------ */
 .section3 {
     margin-top: 50px;
     position: relative;
@@ -570,9 +464,6 @@ h2::after {
     display: flex;
     align-items: center;
     justify-content: center;
-
-
-
 }
 
 .section3 .wrapper3 {
@@ -582,9 +473,6 @@ h2::after {
     display: flex;
     align-items: center;
     justify-content: center;
-
-
-
 }
 
 .section3 .wrapper3 div {
@@ -609,8 +497,6 @@ h2::after {
         33.5px 33.5px 26.8px rgba(0, 0, 0, 0.107),
         53.4px 53.4px 42.7px rgba(0, 0, 0, 0.118),
         100px 100px 80px rgba(0, 0, 0, 0.15);
-
-
 }
 
 .section3 .wrapper3 div h2 {
@@ -634,23 +520,12 @@ h2::after {
 
 
 }
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
 
 
-
-
-
-
-
-
-
-
-
-/* background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(3px); */
-
-
-
-@media screen and (max-width:768px) {
+@media (max-width:768px) {
 
     /* #location {
         flex-direction: column;
@@ -675,11 +550,12 @@ h2::after {
     }
 
     .section1 {
-        height: 95vh;
+        height:auto;
+        overflow-x: hidden;
     }
 
     .wrapper1 {
-        min-height: 95%;
+        height: 100%;
         width: auto;
         flex-direction: column;
 
@@ -687,6 +563,7 @@ h2::after {
 
     .cityInfo {
         display: block;
+        word-wrap: break-word
 
     }
 
@@ -787,9 +664,11 @@ h2::after {
     .wrapper3 .future {
         min-width: 70%;
     }
+}
+    
+/* ------------------------------------------------------------------------------------------------------------ */
 
-
-    @media (max-width:1100px) {
+    /* @media (max-width:1100px) {
         .wrapper1 {
 
             min-height: 100%;
@@ -825,7 +704,7 @@ h2::after {
         }
 
         #temp {
-            /* font-size: 15em; */
+       
             text-align: center;
 
         }
@@ -834,4 +713,4 @@ h2::after {
             font-size: 4em;
         }
     }
-}
+} */
