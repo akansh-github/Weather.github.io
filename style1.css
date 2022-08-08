@@ -567,7 +567,7 @@ h2::after {
     .section1 {
         width: 98%;
 
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
 
     .wrapper1 {
@@ -679,17 +679,18 @@ h2::after {
 
 
     .section3 {
-        margin: 4rem 0rem;
+        margin: 5rem 0rem;
         display: block;
         
     }
 
     .wrapper3 {
+        
         flex-direction: column;
     }
 
     .wrapper3 .future {
-        min-width: 70%;
+        width: 100%;
     }
     .section3 .wrapper3 div h2 {
         margin-top: 1rem;
