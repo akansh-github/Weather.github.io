@@ -9,8 +9,7 @@
 }
 
 body {
-    width: 100%;
-    height: 100%;
+    position: fixed;
     display: grid;
     place-items: center;
     font-family: 'Raleway', 'Poppins', 'Work Sans';
@@ -21,7 +20,7 @@ body {
 #container {
 
     width: 100%;
-    height: auto;
+    height: 100%;
     box-sizing: border-box;
 
     display: flex;
@@ -41,7 +40,7 @@ body {
     width: 100%;
     position: relative;
     left: 0%;
-    top: 8%;
+    top: 0.1%;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -115,10 +114,6 @@ body {
     width: 90%;
     /* transform: translateY(-100px); */
     height: 100%;
-
-
-    /* padding: 10px; */
-    /* margin: 20px; */
     position: relative;
     display: flex;
     align-items: center;
@@ -133,20 +128,23 @@ body {
 .section1 .wrapper1 .cityData {
     width: 60%;
     position: relative;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 
     /* display: flex;
     align-items: center;
     justify-content: center; */
-    float: left;
+    /* float: left; */
 }
 
 .section1 .wrapper1 .cityData .cityInfo {
-    display: block;
-    padding-top: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+
     /* overflow: hidden; */
-    /* align-items: center;
-    justify-content: center; */
+
 }
 
 .section1 .wrapper1 .cityData .cityInfo h1 {
@@ -155,7 +153,7 @@ body {
     position: relative;
     padding-left: 0.9rem;
     width: 100%;
-    
+
     letter-spacing: 4px;
     white-space: nowrap;
     font-size: 4rem;
@@ -179,23 +177,23 @@ body {
     position: relative;
     display: flex;
     align-items: center;
-    flex-direction: row;
+    /* flex-direction: row; */
+    justify-content: center;
 
 
 }
 
 .section1 .wrapper1 .cityData .cityInfo .weatherDescription {
     display: block;
-    margin: 1rem;
-    /* padding-left: 1rem; */
-    
-    float: left;
+    /* float: left; */
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: 50%;
     font-size: 2em;
     font-weight: 1000;
     letter-spacing: 3px;
+    padding-bottom: 10px;
 }
 
 .section1 .wrapper1 .cityData .cityInfo .weatherDescription #tempIcon {
@@ -213,26 +211,20 @@ body {
 
 }
 
-.section1 .wrapper1 .cityData .cityInfo .weatherDescription #desc {
+.section1 .wrapper1 .cityData .cityInfo .weatherDescription #weatherDescription {
     font-family: 'Work Sans';
     text-align: center;
     font-weight: 100;
     /* margin-top: 1rem; */
-    font-size: 2.5em;
+    font-size: 1.2em;
     margin-left: 1rem;
+    padding-bottom: 1rem;
 }
 
-/* .section1 .wrapper1 .cityData .cityInfo .row {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex: 1 1;
-    justify-content: space-between;
-} */
 
-.section1 .wrapper1 .cityData .cityInfo  .row .features {
+.section1 .wrapper1 .cityData .cityInfo .row .features {
     /* display: flex; */
+    width: 50%;
     position: relative;
     font-size: 2.5em;
     /* right: 0; */
@@ -251,6 +243,7 @@ body {
 }
 
 .weather {
+    margin-left: 50px;
     width: 40%;
     height: 90%;
     display: flex;
@@ -258,19 +251,19 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    float: right;
+    /* float: right; */
     border-left: 2px solid white;
 
 }
 
-.temperature {
+/* .temperature {
     width: 100%;
     position: relative;
     display: flex;
     bottom: 0;
     margin: 10px 0px;
     padding: 10px 0px;
-}
+} */
 
 #temp {
 
@@ -303,18 +296,17 @@ h2::after {
 .toggleBtn {
     white-space: nowrap;
     /* top: 50%; */
+    /* position:fixed ; */
+    bottom: 0;
     width: 90%;
-    height: 60px;
+    height: 10%;
     background-color: rgba(0, 0, 0, 0.45);
-    border-radius: 30px;
+    border-radius: 42px;
     backdrop-filter: blur(5px);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 10px;
-
-    transform: translateY(35px);
-
     box-shadow:
         2.8px 2.8px 2.2px rgba(0, 0, 0, 0.039),
         6.7px 6.7px 5.3px rgba(0, 0, 0, 0.057),
@@ -539,7 +531,7 @@ h2::after {
 
 
 @media (max-width:768px) {
-    
+
 
     /* #location {
         flex-direction: column;
@@ -563,49 +555,63 @@ h2::after {
         font-size: 2rem;
     }
 
-#container .section1 {
-        width: 100%;
-
-        /* overflow-x: hidden; */
-    }
+   
 
     #container .section1 .wrapper1 {
-        height: 100%;
-       width: auto;
-        
-        flex-direction: column;
+        /* height: auto;
+       width: auto; */
+
+        display: block;
+        height: fit-content;
 
 
+    }
+
+    .section1 .wrapper1 .cityData  {
+        width: 100%;
+        display: block;
+       
+       
     }
 
     .cityInfo {
+        width: 100%;
         display: block;
-        word-wrap: break-word
+
+        /* word-wrap: break-word */
     }
 
-    .row {
-        display: flex;
+    .cityInfo h1 {
+        font-size: 2rem;
+      
+    }
+
+    .section1 .wrapper1 .cityData .cityInfo .row{
+        /* margin-left: 120px; */
+        /* display: flex;
         align-items: center;
-        justify-content: space-evenly;
-        width: 100%;
+        justify-content: space-evenly; */
+        width: 90%;
         gap: 4rem;
         border-top: 3px solid white;
 
     }
 
     .weather {
+
         width: 90%;
         border-left: none;
         border-top: 3px solid white;
     }
 
     .weatherDescription {
-        margin-left: 2rem;
+        margin-left: 50px;
 
     }
 
     .features ul li {
-        font-size: 2rem;
+        word-wrap: normal;
+        font-size: 1.8rem;
     }
 
     .toggleBtn {
@@ -614,7 +620,7 @@ h2::after {
         display: block;
         /* transform: translateY(); */
     }
-    
+
 
     .cta {
         display: block;
@@ -628,7 +634,7 @@ h2::after {
     .cta span {
         align-items: center;
 
-        font-size: 2.3rem;
+        font-size: 1.5rem;
         margin: 5px;
     }
 
@@ -654,8 +660,8 @@ h2::after {
     .cta svg {
 
         transform: translateX(1rem);
-        transform: translateY(-10px);
-        font-size:5rem;
+        transform: translateY(-5px);
+        font-size: 5rem;
     }
 
 
@@ -668,7 +674,7 @@ h2::after {
 
         flex-direction: column;
         width: 100%;
-       
+
     }
 
     .section2 .extraInfo .flexdata {
@@ -682,22 +688,23 @@ h2::after {
     .section3 {
         margin: 5rem 0rem;
         display: block;
-        
+
     }
 
     .wrapper3 {
-        
+
         flex-direction: column;
     }
 
     .wrapper3 .future {
         width: 100%;
     }
+
     .section3 .wrapper3 div h2 {
         margin-top: 1rem;
     }
 
-    .section3 .wrapper3 .future .desc{
+    .section3 .wrapper3 .future .desc {
         margin-bottom: 2rem;
     }
 }
