@@ -30,7 +30,7 @@ body {
 
     gap: 20px;
 
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 
 
 }
@@ -141,7 +141,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
 
     /* overflow: hidden; */
 
@@ -243,7 +243,7 @@ body {
 }
 
 .weather {
-    margin-left: 50px;
+    /* margin-left: 50px; */
     width: 40%;
     height: 90%;
     display: flex;
@@ -531,7 +531,12 @@ h2::after {
 
 
 @media (max-width:768px) {
-
+    /* #container {
+        height: 100vh;
+        width: 100vw;
+        scroll-behavior: smooth;
+        overflow-y: scroll;
+    } */
 
     /* #location {
         flex-direction: column;
@@ -555,23 +560,27 @@ h2::after {
         font-size: 2rem;
     }
 
-   
+/* .section1{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+} */
 
     #container .section1 .wrapper1 {
         /* height: auto;
        width: auto; */
-
+        margin-top: 250px;
         display: block;
         height: fit-content;
 
 
+
     }
 
-    .section1 .wrapper1 .cityData  {
+    .section1 .wrapper1 .cityData {
         width: 100%;
         display: block;
-       
-       
+
+
     }
 
     .cityInfo {
@@ -583,10 +592,10 @@ h2::after {
 
     .cityInfo h1 {
         font-size: 2rem;
-      
+
     }
 
-    .section1 .wrapper1 .cityData .cityInfo .row{
+    .section1 .wrapper1 .cityData .cityInfo .row {
         /* margin-left: 120px; */
         /* display: flex;
         align-items: center;
@@ -615,19 +624,29 @@ h2::after {
     }
 
     .toggleBtn {
-        height: auto;
+        height: 150px;
         /* font-size: 3em; */
         display: block;
         /* transform: translateY(); */
     }
 
 
+    #back {
+        width: 110px;
+        margin-left: 5px;
+        height: 50px;
+        font-size: 1.5rem;
+        line-height: 50px;
+
+    }
+
     .cta {
         display: block;
-
-        margin: 1rem;
+        margin: 2px;
         margin-left: 2rem;
-
+        height: 50px;
+        font-size: 1.5rem;
+        line-height: 50px;
 
     }
 
@@ -638,14 +657,6 @@ h2::after {
         margin: 5px;
     }
 
-    #back {
-        width: 110px;
-        height: 50px;
-        margin-left: 5px;
-        font-size: 1.5rem;
-        line-height: 50px;
-
-    }
 
 
 
@@ -711,49 +722,38 @@ h2::after {
 
 /* ------------------------------------------------------------------------------------------------------------ */
 
-/* @media (max-width:1100px) {
-        .wrapper1 {
-
-            min-height: 100%;
-            display: block;
-            flex-direction: column;
-        }
-
-        .cityData {
-            display: block;
-            flex-direction: column;
-        }
-
-        .cityInfo {
-            display: block;
-        }
-
-        .row {
-            width: 100%;
-            font-size: 0.8em;
-            align-items: center;
-            border-top: 3px solid white;
-        }
-
-        .weather {
-            border-top: 3px solid white;
-            border-left: none;
-            width: 95%;
-        }
-
-        .features {
-            border-top: 3px solid white;
-            width: 100%;
-        }
-
-        #temp {
+/* @media (min-width:1100px) {
+   
+    .row {
+        width: 100%;
+        font-size: 0.8em;
+        align-items: center;
        
-            text-align: center;
+    }
 
-        }
 
-        #minmax {
-            font-size: 4em;
-        }
+
+    .section1 .wrapper1 .cityData .cityInfo .row .features {
+        border:none;
+        
+        font-size: 1.8rem;
+    }
+
+    .weather {
+        
+        border-left: 3px solid white;
+      
+        
+    }
+
+    .features {
+        border-top: 3px solid white;
+        width: 100%;
+    }
+
+  
+
+    #minmax {
+        font-size: 4em;
     }
 } */
