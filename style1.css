@@ -150,8 +150,9 @@ body {
 }
 
 .section1 .wrapper1 .cityData .cityInfo h1 {
-    display: block;
+    /* display: block; */
     margin-left: 0.9rem;
+    position: relative;
     padding-left: 0.9rem;
     width: 100%;
     
@@ -161,9 +162,10 @@ body {
 }
 
 .section1 .wrapper1 .cityData .cityInfo h2 {
+    position: relative;
     margin-left: 0.9rem;
     padding-left: 0.9rem;
-    display: block;
+    /* display: block; */
     letter-spacing: 3px;
     width: 100%;
     font-size: 1.5em;
@@ -537,10 +539,7 @@ h2::after {
 
 
 @media (max-width:768px) {
-    .container {
-        width: 100vw;
-        height: 100vh;
-    }
+    
 
     /* #location {
         flex-direction: column;
@@ -564,15 +563,17 @@ h2::after {
         font-size: 2rem;
     }
 
-    .section1 {
-        width: 98%;
+#container .section1 {
+        width: 100%;
+        overflow-y: scroll;
 
         /* overflow-x: hidden; */
     }
 
-    .wrapper1 {
+    #container .section1 .wrapper1 {
         height: 100%;
         width: 100%;
+        overflow-y:scroll;
         flex-direction: column;
 
 
@@ -614,6 +615,7 @@ h2::after {
         display: block;
         /* transform: translateY(); */
     }
+    
 
     .cta {
         display: block;
