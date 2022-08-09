@@ -531,12 +531,13 @@ h2::after {
 
 
 @media (max-width:768px) {
-    /* #container {
-        height: 100vh;
-        width: 100vw;
-        scroll-behavior: smooth;
+    /* body{
         overflow-y: scroll;
     } */
+    #container {
+   height: fit-content;
+        overflow-y: scroll;
+    }
 
     /* #location {
         flex-direction: column;
@@ -568,7 +569,7 @@ h2::after {
     #container .section1 .wrapper1 {
         /* height: auto;
        width: auto; */
-        margin-top: 250px;
+        margin-top: 500px;
         display: block;
         height: fit-content;
 
@@ -600,6 +601,7 @@ h2::after {
         /* display: flex;
         align-items: center;
         justify-content: space-evenly; */
+        /* display: block; */
         width: 90%;
         gap: 4rem;
         border-top: 3px solid white;
