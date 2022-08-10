@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+
+    <link rel="shortcut icon"
+        href="https://user-images.githubusercontent.com/22769589/68296145-f7305d80-00a4-11ea-9cbe-24b18222bfa9.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style1.css">
+
+
+
+</head>
+
+<body>
+    <div id="container">
+
+        <!-- --------------------------------------------------------------------------------------------------------------------- -->
+        `
+        <div id="location">
+            <input type="text" id="country" placeholder="Country">
+            <input type="text" id="city" placeholder="City">
+            <input type="submit" id="check" value="Go">
+        </div>
+
+        <!-- --------------------------------------------------------------------------------------------------------------------- -->
+        <div class="section1">
+            <div class="wrapper1">
+                <div class="cityData">
+                    <div class="cityInfo">
+                        <h1 class="City" id="City">CityName</h1><br />
+                        <h2 class="date" id="date"></h2><br />
+                        <div class="row">
+                            <div class="weatherDescription">
+                                <img src="icons/starter_img.svg" alt="" id="tempIcon"><br>
+                                <!-- <img src="Error.src" onerror="this.style.display='none'"/> -->
+                                <span id="weatherDescription">Description</span>
+                            </div>
+
+                            <div class="features">
+                                <ul>
+                                    <li id="feelsLike">Feels Like : 0°C</li>
+                                    <li id="longitude">Longitude : 0</li>
+                                    <li id="latitude">Latitude : 0</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="weather" id="weather">
+
+                    <h2 id="temp" data-end="C">0°</h2><br>
+
+                    <span class="minmax" id="minmax">Min | Max</span>
+                </div>
+            </div>
+        </div>
+    
+
+    <!-- --------------------------------------------------------------------------------------------- -->
+    <div class="section2">
+        <div class="wrapper2">
+            <div class="extraInfo">
+                <div class="flexdata" id="appTemp">
+                    <h3>Apparent Temperature : --</h3>
+                </div>
+                <div class="flexdata" id="windSpeed">
+                    <h3>W-wind : --</h3>
+                </div>
+                <div class="flexdata" id="visibility">
+                    <h3>Visibility : --</h3>
+                </div>
+                <div class="flexdata" id="humidity">
+                    <h3>Humidity : --</h3>
+                </div>
+                <div class="flexdata" id="sealevel">
+                    <h3>Sea-Level : --</h3>
+                </div>
+                <div class="flexdata" id="airPressure">
+                    <h3>Air Pressure : --</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------------------------------------------------ -->
+    <div class="section3">
+        <div class="wrapper3">
+            <div class="future" id="today">
+                <h2>Today</h2>
+                <span class="MinMax" id="minmaxToday">Min | Max</span><br>
+                <span class="desc" id="descToday">Description</span>
+
+            </div>
+            <div class="future" id="tomarrow">
+                <h2>Tomarrow</h2>
+                <span class="MinMax" id="minmaxTomarrow">Min | Max</span><br>
+                <span class="desc" id="descTommarrow">Description</span>
+            </div>
+            <div class="future" id="nextDay">
+                <h2 id="NextDay">Tue</h2>
+                <span class="MinMax" id="minmaxNextDay">Min | Max</span><br>
+                <span class="desc" id="descDay">Description</span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------------------------------------------------------------------- -->
+    <div class="toggleBtn" id="toggleBtn">
+
+        <button id="back">
+            Back</button>
+        <button class="cta" id="BtnWeDet">
+            <span>Weather Details</span>
+            <svg viewBox="0 0 13 10" height="10px" width="15px">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+        </button>
+        <button class="cta" id="BtnNextDays">
+            <span>3-Day Weather Forcast</span>
+            <svg viewBox="0 0 13 10" height="10px" width="15px">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+        </button>
+    </div>
+</div>
+</body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="script1.js"></script>
+
+</html>
