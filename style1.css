@@ -36,11 +36,11 @@ body {
 }
 
 #container #location {
-    height: auto;
+    /* height: auto; */
     width: 100%;
     position: relative;
     left: 0%;
-    top: 0.1%;
+    top: 0.05%;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -53,15 +53,15 @@ body {
 #location input {
     border: 1px solid white;
     font-family: 'Roboto';
-    height: 50px;
-    width: 300px;
-    margin: 0px 20px;
-    padding: 0 20px;
+    height: 3rem;
+    width: 20rem;
+    margin: 0rem 2rem;
+    padding: 0 1.5rem;
     left: 0%;
     border: none;
     outline: none;
     background: white;
-    font-size: 20px;
+    font-size: 1.2rem;
     color: black;
 
 }
@@ -72,13 +72,15 @@ body {
 
 #location input[type="submit"] {
     cursor: pointer;
-    width: 150px;
+    width: 8rem;
     background: #000000d0;
     color: white;
     font-weight: 700;
     font-size: 22px;
 }
-
+#location input[type="submit"]:hover{
+    background-color: rgb(68, 68, 68);
+}
 
 #country,
 #city,
@@ -301,12 +303,12 @@ h2::after {
     width: 90%;
     height: 10%;
     background-color: rgba(0, 0, 0, 0.45);
-    border-radius: 42px;
+    border-radius: 3rem;
     backdrop-filter: blur(5px);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 10px;
+    padding: 0.7rem;
     box-shadow:
         2.8px 2.8px 2.2px rgba(0, 0, 0, 0.039),
         6.7px 6.7px 5.3px rgba(0, 0, 0, 0.057),
@@ -320,8 +322,8 @@ h2::after {
 #back {
     background-color: #b1dae7;
     color: #4d4a4a;
-    width: 120px;
-    height: 50px;
+    width:8rem;
+    height: 3rem;
     margin-left: auto;
     font-size: 1.5rem;
     border-radius: 40px;
@@ -359,17 +361,17 @@ h2::after {
     top: 0;
     left: 0;
     display: block;
-    border-radius: 50px;
+    border-radius: 1.6rem;
     background: #c5e9f4;
-    width: 45px;
-    height: 45px;
+    width: 2.8rem;
+    height: 2.8rem;
     transition: all 0.4s ease;
 }
 
 .cta span {
     position: relative;
     font-family: "Ubuntu", sans-serif;
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: 700;
     letter-spacing: 0.05em;
     color: #3d74aa;
@@ -532,10 +534,16 @@ h2::after {
 
 @media (max-width:500px) {   
     #temp {
-        font-size: 10rem;
+        font-size: 6rem;
+      
     }
-#location{
-    transform: translateY(-70px);
+    .weather .minmax {
+        font-size: 1.5rem;
+        transform: translateY(-1.8rem);
+    }
+    #container #location {
+    transform: translateY(-40px);
+    gap: 10px;
 }
     #location #country,
     #location #city {
@@ -550,7 +558,7 @@ h2::after {
 
     #location #check {
         height: 40px;
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
 
 /* .section1{
@@ -559,9 +567,10 @@ h2::after {
 } */
 
     #container .section1 .wrapper1 {  
-        transform: translateY(-50px);
+        transform: translateY(-40px);
         display: block;
         height: fit-content;
+        width: 98%;
     }
 
     .section1 .wrapper1 .cityData {
@@ -628,11 +637,8 @@ h2::after {
     }
 
     .toggleBtn {
-      
-        /* font-size: 3em; */
         display: block;
-        /* transform: translateY(); */
-        transform: translateY(-100PX);
+        transform: translateY(-100px);
     }
     #back {
         width: 110px;
