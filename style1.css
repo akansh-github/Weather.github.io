@@ -570,7 +570,7 @@ h2::after {
         transform: translateY(-40px);
         display: block;
         height: fit-content;
-        width: 98%;
+        width: 98vw;
     }
 
     .section1 .wrapper1 .cityData {
