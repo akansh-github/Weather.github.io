@@ -530,26 +530,13 @@ h2::after {
 /* ------------------------------------------------------------------------------------------------------------ */
 
 
-@media (max-width:500px) {
-    body{
-        height: 100vh;
-    }
-    #container {
-   height: fit-content;
-        overflow-y: scroll;
-        height: 100%;
-    }
-
-    /* #location {
-        flex-direction: column;
-    } */
+@media (max-width:500px) {   
     #temp {
         font-size: 10rem;
     }
-/* #location{
-    top:0.05%;
-    gap: 10px;
-} */
+#location{
+    transform: translateY(-70px);
+}
     #location #country,
     #location #city {
 
@@ -558,10 +545,11 @@ h2::after {
         display: block;
         text-align: center;
         font-size: 1.5rem;
+        
     }
 
     #location #check {
-        height: 50px;
+        height: 40px;
         font-size: 1.8rem;
     }
 
@@ -571,7 +559,7 @@ h2::after {
 } */
 
     #container .section1 .wrapper1 {  
-        transform: translateY(-100px);
+        transform: translateY(-50px);
         display: block;
         height: fit-content;
     }
@@ -736,27 +724,20 @@ h2::after {
 
 /* ------------------------------------------------------------------------------------------------------------ */
 
-@media (max-width:768px) {
+/* @media (max-width:768px) {
    
-    /* body{
-        height: 100vh;
-    } */
+   
     #container {
         height: fit-content;
              overflow-y: scroll;
              height: 100%;
          }
      
-         /* #location {
-             flex-direction: column;
-         } */
+        
          #temp {
              font-size: 7rem;
          }
-     /* #location{
-         top:0.05%;
-         gap: 10px;
-     } */
+    
          #location #country,
          #location #city {
      
@@ -772,14 +753,9 @@ h2::after {
              font-size: 1.5rem;
          }
      
-     /* .section1{
-         scroll-behavior: smooth;
-         overflow-y: scroll;
-     } */
+    
      
-         #container .section1 .wrapper1 {
-             /* height: auto;
-            width: auto; */
+         
              margin-top: 100px;
              display: block;
              height: fit-content;
@@ -799,7 +775,7 @@ h2::after {
              width: 100%;
              display: block;
      
-             /* word-wrap: break-word */
+           
          }
      
          .cityInfo h1 {
@@ -842,10 +818,6 @@ h2::after {
              border-top: 3px solid white;
          }
      
-         /* .weatherDescription {
-             margin-left: 50px;
-     
-         } */
      
          .features ul li {
              word-wrap: normal;
@@ -855,9 +827,9 @@ h2::after {
      
          .toggleBtn {
              height: 150px;
-             /* font-size: 3em; */
+           
              display: block;
-             /* transform: translateY(); */
+            
          }
      
      
@@ -949,4 +921,4 @@ h2::after {
              margin-bottom: 2rem;
          }
      
-        }
+        } */
